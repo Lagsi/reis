@@ -7,7 +7,7 @@ export default function MoviesPage() {
       <div className="w-1/4 hidden md:block">
         <MoviesNav movies={movies} />
       </div>
-      <div className="">
+      <div>
         {movies.map((movie, i) => (
           <section
             key={i}
