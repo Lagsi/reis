@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 md:px-8 md:pb-4 lg:flex lg:justify-between lg:flex-col">
+    <main className="min-h-screen p-4 md:px-8 md:pb-4 lg:flex lg:justify-between mx-auto max-w-7xl lg:flex-col">
       <div className="grid lg:grid-cols-2 lg:justify-between h-full">
-        <div className="flex flex-col gap-4 items-center">
-          <div className="h-1/2 w-full max-w-xl md:w-[600px] relative">
-            <Image src={intrasigence} alt="portrait" style={{ objectFit: "cover" }} />
+        <div className="flex flex-col gap-4 items-center lg:w-4/5">
+          <div className="w-full max-w-lg">
+            <Image src={intrasigence} alt="portrait"/>
           </div>
-          <div className="h-1/2 w-full max-w-xl md:w-[600px] relative ">
-            <Image src={night} alt="portrait" style={{ objectFit: "cover" }} />
+          <div className="w-full max-w-lg">
+            <Image src={night} alt="portrait"/>
           </div>
         </div>
         <div className="flex items-center justify-center order-first md:p-8 lg:order-last lg:flex-col lg:justify-between lg:items-center">
@@ -22,16 +22,16 @@ export default function Home() {
           <nav className="hidden lg:block lg:w-full">
             <ul className="grid grid-cols-2 justify-items-center gap-3 mt-8 x lg:max-w-xl lg:mx-auto">
               <li>
-                <Link className="hover:opacity-50" href={"/movies"}>Movies</Link>
+                <Link className="hover:opacity-50 w-2/3" href={"/movies"}>Movies</Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/photos"}>Photography</Link>
+                <Link className="hover:opacity-50 w-2/3" href={"/photos"}>Photography</Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/awards"}>Awards</Link>
+                <Link className="hover:opacity-50 w-2/3" href={"/awards"}>Awards</Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/bio"}>Biography</Link>
+                <Link className="hover:opacity-50 w-2/3" href={"/bio"}>Biography</Link>
               </li>
             </ul>
           </nav>
