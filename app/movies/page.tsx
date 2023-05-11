@@ -1,29 +1,17 @@
 import { movies } from "@/movies";
+import MoviesNav from "../components/moviesNav";
 
 export default function MoviesPage() {
   return (
-    <div className="flex">
-      <div className="h-[calc(100vh-8rem)] w-1/4 sticky top-28 text-center mt-28">
-        <nav>
-          <ul className="flex flex-col gap-3 items-center">
-            {movies.map((movie, i) => (
-              <li
-                key={i}
-                className="w-fit hover:opacity-50 active:line-through visited:line-through focus:line-through"
-              >
-                <a className="w-fit" href={`#${movie.title}`}>
-                  <h3 className="text-2xl">{movie.title}</h3>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+    <div className="h-full flex p-4 lg:p-0">
+      <div className="w-1/4 hidden lg:block">
+        <MoviesNav movies={movies} />
       </div>
       <div>
         {movies.map((movie, i) => (
           <section
             key={i}
-            className="h-screen max-h-[1080px] flex gap-10 first:mt-6 last:h-[calc(100vh-8rem)]"
+            className=" lg:h-screen lg:max-h-[1080px] flex-col lg:flex-row gap-10 first:mt-6 last:h-[calc(100vh-8rem)]"
           >
             <div className="flex flex-col gap-3">
               <h1 id={movie.title} className="text-4xl">
@@ -45,7 +33,7 @@ export default function MoviesPage() {
               </ul>
             </div>
             <div>
-              <img src={movie.imgUrl} alt="" />
+              <img className="block" src={movie.imgUrl} alt="" />
             </div>
           </section>
         ))}

@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         {children}
-        <footer>
+        {/* <footer>
           <p className="text-left text-sm leading-3 ml-2 text-zinc-600">
             Design by{" "}
             <Link
@@ -35,7 +35,7 @@ export default function RootLayout({
               N
             </Link>
           </p>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
