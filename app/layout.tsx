@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,7 +16,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        {children}
+        <footer>
+          <p className="text-left text-sm leading-3 ml-2 text-zinc-600">
+            Design by{" "}
+            <Link
+              className="leading-3 line-through"
+              href={"https://github.com/JeppeHauman"}
+            >
+              J
+            </Link>{" "}
+            &{" "}
+            <Link
+              className="leading-3 line-through"
+              href={"https://github.com/n13a"}
+            >
+              N
+            </Link>
+          </p>
+        </footer>
+      </body>
     </html>
   );
 }
