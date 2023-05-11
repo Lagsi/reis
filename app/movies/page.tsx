@@ -7,11 +7,11 @@ export default function MoviesPage() {
       <div className="w-1/4 hidden md:block">
         <MoviesNav movies={movies} />
       </div>
-      <div>
+      <div className="">
         {movies.map((movie, i) => (
           <section
             key={i}
-            className=" lg:h-screen lg:max-h-[1080px] flex-col flex items-center lg:items-start lg:flex-row gap-10 first:mt-6 lg:last:h-[calc(100vh-8rem)]"
+            className="lg:h-screen lg:max-h-[1080px] flex-col flex items-center lg:items-start lg:flex-row gap-10 first:mt-6 lg:last:h-[calc(100vh-8rem)]"
           >
             <div className="flex flex-col gap-3">
               <h1 id={movie.title} className="text-4xl">
