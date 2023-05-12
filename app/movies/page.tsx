@@ -3,7 +3,7 @@ import MoviesNav from "../components/moviesNav";
 
 export default function MoviesPage() {
   return (
-    <div className="h-full md:flex gap-4 p-4 lg:p-0">
+    <div className="h-full md:flex gap-4 p-4 lg:p-0 leading-7">
       <div className="w-1/4 hidden md:block border-r">
         <MoviesNav movies={movies} />
       </div>
@@ -25,7 +25,7 @@ export default function MoviesPage() {
                   </li>
                 ))}
               </ul>
-              <p className="max-w-lg">{movie.synopsis}</p>
+              <p className="max-w-lg ">{movie.synopsis}</p>
               <ul>
                 {movie.awards.map((award, i) => (
                   <li key={i}>{award}</li>
