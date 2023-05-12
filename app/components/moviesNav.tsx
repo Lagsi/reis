@@ -1,25 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   movies: any;
 }
 
 export default function MoviesNav({ movies }: Props) {
-  const [active, setActive] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position =
+        window.pageYOffset /
+        (document.documentElement.scrollHeight - window.innerHeight);
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="w-full h-[calc(100vh-8rem)] sticky top-28 mt-28">
+    <div className="w-full h-[calc(100vh-8rem)] sticky top-24">
       <nav className=" flex flex-col h-full justify-between">
-        <ul className="flex flex-col gap-5 items-center">
+        <ul className="flex flex-col gap-5 items-center relative">
           {movies.map((movie: any, i: number) => (
-            <li
-              key={i}
-              className={`w-fit hover:opacity-50 ${
-                active ? "line-through" : ""
-              }`}
-            >
+            <li key={i} className={`w-fit hover:opacity-50`}>
               <a className="w-fit" href={`#${movie.title}`}>
                 <h3 className="md:text-lg lg:text-xl xl:text-2xl">
                   {movie.title}
@@ -27,9 +36,26 @@ export default function MoviesNav({ movies }: Props) {
               </a>
             </li>
           ))}
+          <div className="absolute  w-1 h-full right-2 2xl:right-20">
+            <div
+              className="bg-white w-full"
+              style={{
+                height: `${scrollPosition * 80}%`,
+                maxHeight: `${100 - 100 / (movies.length + 1)}%`,
+              }}
+            ></div>
+            <div
+              className={`bg-black w-full`}
+              style={{
+                height: `${100 / (movies.length + 1)}%`,
+                maxHeight: "120%",
+                marginTop: ``,
+              }}
+            ></div>
+          </div>
         </ul>
         <Link href={"/"}>
-          <h4 className="text-6xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
+          <h4 className=" md:text-5xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
             Reis
             <br /> Çelik
           </h4>
