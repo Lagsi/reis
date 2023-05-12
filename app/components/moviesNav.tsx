@@ -43,7 +43,7 @@ export default function MoviesNav({ movies }: Props) {
               </a>
             </li>
           ))}
-          <div className="absolute  w-2 h-full right-2 2xl:right-20">
+          <div className="absolute w-2 h-full right-0 2xl:right-20">
             <div
               className="bg-inherit w-full"
               style={{
@@ -69,7 +69,7 @@ export default function MoviesNav({ movies }: Props) {
             <br /> Çelik
           </h4>
         </Link>
-        <ul className="grid grid-cols-2 text-left gap-3 mb-28 lg:max-w-xl lg:mx-auto">
+        <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-3 mb-28 lg:max-w-xl lg:mx-auto">
           <li>
             <Link className="hover:opacity-50" href={"/movies"}>
               Movies
