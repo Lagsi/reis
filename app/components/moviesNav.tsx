@@ -24,11 +24,18 @@ export default function MoviesNav({ movies }: Props) {
     };
   }, []);
   return (
-    <div className="w-full h-[calc(100vh-8rem)] sticky top-24">
+    <div className="w-full px-2 h-[calc(100vh-8rem)] sticky top-24">
       <nav className=" flex flex-col h-full justify-between">
         <ul className="flex flex-col gap-5 items-center relative">
           {movies.map((movie: any, i: number) => (
-            <li key={i} className={`w-fit hover:opacity-50`}>
+            <li
+              key={i}
+              className={`w-fit hover:opacity-50 transition-all ease-in-out duration-500 ${
+                scrollPosition * 100 >= (100 / movies.length) * i &&
+                scrollPosition * 100 <= (100 / movies.length) * (i + 1) &&
+                "opacity-50"
+              }`}
+            >
               <a className="w-fit" href={`#${movie.title}`}>
                 <h3 className="md:text-lg lg:text-xl xl:text-2xl">
                   {movie.title}
@@ -36,22 +43,24 @@ export default function MoviesNav({ movies }: Props) {
               </a>
             </li>
           ))}
-          <div className="absolute  w-1 h-full right-2 2xl:right-20">
+          <div className="absolute  w-2 h-full right-2 2xl:right-20">
             <div
-              className="bg-white w-full"
+              className="bg-inherit w-full"
               style={{
-                height: `${scrollPosition * 80}%`,
-                maxHeight: `${100 - 100 / (movies.length + 1)}%`,
+                height: `${scrollPosition * 83}%`,
+                maxHeight: `100%`,
               }}
             ></div>
             <div
-              className={`bg-black w-full`}
+              className={`w-full flex justify-center items-center`}
               style={{
                 height: `${100 / (movies.length + 1)}%`,
                 maxHeight: "120%",
                 marginTop: ``,
               }}
-            ></div>
+            >
+              <div className="bg-black w-full h-2 rounded-full"></div>
+            </div>
           </div>
         </ul>
         <Link href={"/"}>

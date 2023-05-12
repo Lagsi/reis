@@ -4,10 +4,10 @@ import MoviesNav from "../components/moviesNav";
 export default function MoviesPage() {
   return (
     <div className="h-full md:flex gap-4 p-4 lg:p-0">
-      <div className="w-1/4 hidden md:block">
+      <div className="w-1/4 hidden md:block border-r">
         <MoviesNav movies={movies} />
       </div>
-      <div className="ml-4">
+      <div className="ml-4 ">
         {movies.map((movie, i) => (
           <section
             key={i}
