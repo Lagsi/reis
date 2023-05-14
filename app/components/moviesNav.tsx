@@ -24,9 +24,9 @@ export default function MoviesNav({ movies }: Props) {
     };
   }, []);
   return (
-    <div className="w-full px-2 h-[calc(100vh-8rem)] sticky top-24">
-      <nav className=" flex flex-col h-full justify-between">
-        <ul className="flex flex-col gap-5 items-center relative">
+    <div className="w-full px-2 lg:h-[calc(100vh-8rem)] sticky top-12 xl:top-24">
+      <nav className=" flex flex-col h-full gap-5 justify-between">
+        <ul className="flex flex-col text-center gap-1 lg:gap-5 items-center relative">
           {movies.map((movie: any, i: number) => (
             <li
               key={i}
@@ -43,7 +43,7 @@ export default function MoviesNav({ movies }: Props) {
               </a>
             </li>
           ))}
-          <div className="absolute w-2 h-full right-0 2xl:right-20">
+          {/* <div className="absolute w-2 h-full right-0 2xl:right-20">
             <div
               className="bg-inherit w-full"
               style={{
@@ -61,7 +61,7 @@ export default function MoviesNav({ movies }: Props) {
             >
               <div className="bg-black w-full h-2 rounded-full"></div>
             </div>
-          </div>
+          </div> */}
         </ul>
         <Link href={"/"}>
           <h4 className=" md:text-5xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
@@ -69,7 +69,7 @@ export default function MoviesNav({ movies }: Props) {
             <br /> Çelik
           </h4>
         </Link>
-        <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-3 mb-28 lg:max-w-xl lg:mx-auto">
+        <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-1 lg:gap-3 mb-28 lg:max-w-xl lg:mx-auto">
           <li>
             <Link className="hover:opacity-50" href={"/movies"}>
               Movies

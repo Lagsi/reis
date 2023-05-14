@@ -7,7 +7,7 @@ export const movies = [
     imgUrl:
       "https://media-cache.cinematerial.com/p/500x/itrb8giy/lal-gece-british-movie-poster.jpg",
     year: 2013,
-    awards: ["62.Berlin International Film Festival (Berlinale): Crystal Bear", "17.Nurnberg TD Film Festival-Germany: (Best Film, Best Actor, Best Actress )", "38.Wurzburg Film Festival-Germany: Best Film", "38.Buster International Film Festival-Denmark: Special Jury Price"],
+    awards: [""],
   },
   {
     title: "Tales of Intransigence",
