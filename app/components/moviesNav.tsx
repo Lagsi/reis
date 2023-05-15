@@ -30,10 +30,10 @@ export default function MoviesNav({ movies }: Props) {
           {movies.map((movie: any, i: number) => (
             <li
               key={i}
-              className={`w-fit hover:opacity-50 transition-all ease-in-out duration-500 ${
+              className={`w-fit relative hover:opacity-50  transition-all before:opacity-50 after:opacity-50 ease-in-out duration-500  ${
                 scrollPosition * 100 >= (100 / movies.length) * i &&
                 scrollPosition * 100 <= (100 / movies.length) * (i + 1) &&
-                "opacity-50"
+                "opacity-50 before:w-2 before:h-[2px] before:bg-black before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 after:w-2 after:h-[2px] after:bg-black after:absolute after:-right-4 after:top-1/2 after:-translate-y-1/2"
               }`}
             >
               <a className="w-fit" href={`#${movie.title}`}>

@@ -21,21 +21,33 @@ export const movies = [
   },
   {
     title: "Food for a Funeral",
-    cast: ["Me", "Nima"],
+    cast: [
+      "Tarkhan Omarov",
+      "Ziyaddin Aliyev",
+      "Silan Düzdaban",
+      "Mariam Buturishvili",
+      "Dilan Aksüt",
+    ],
     synopsis:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur ipsum nihil fugiat quo rem doloremque repudiandae, architecto natus molestiae odit a omnis, aut error delectus, quas nemo commodi ab amet laborum eligendi! Mollitia dolor, quis necessitatibus cum saepe magnam. Illum, nemo quisquam ducimus qui sed reprehenderit? Officiis, sed magni.",
+      "A young boy in a remote region who dreams of becoming a master of traditional music sets off on a trip with his teacher. He promises to bring back an apple as a souvenir for a girl. This eloquent contemporary allegory is set against a backdrop of tradition and culture.",
     imgUrl:
-      "https://media-cache.cinematerial.com/p/500x/itrb8giy/lal-gece-british-movie-poster.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMDU2MDEyNmItYWVhMi00OGZiLWEyY2QtODcyNTJjMWJjMTQ5XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg",
     year: 2001,
     awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
   },
   {
     title: "Goodbye Tomorrow",
-    cast: ["Me", "Nima"],
+    cast: [
+      "Ekrem Ataer",
+      "Orhan Aydin",
+      "Firat Baskale",
+      "Bedri Baykam",
+      "Meltem Berent",
+    ],
     synopsis:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur ipsum nihil fugiat quo rem doloremque repudiandae, architecto natus molestiae odit a omnis, aut error delectus, quas nemo commodi ab amet laborum eligendi! Mollitia dolor, quis necessitatibus cum saepe magnam. Illum, nemo quisquam ducimus qui sed reprehenderit? Officiis, sed magni.",
+      "This movie is about Deniz Gezmis and his two comrades. They were three revolutionary activist has been executed by military fascist junta in 1972.",
     imgUrl:
-      "https://media-cache.cinematerial.com/p/500x/itrb8giy/lal-gece-british-movie-poster.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMThmYjNiMmYtZWU3Ny00NDRmLTg0YjYtZGE3MTFmZmM1YzM2XkEyXkFqcGdeQXVyMTYzMDkwNjg@._V1_FMjpg_UX1000_.jpg",
     year: 2001,
     awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
   },
