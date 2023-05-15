@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Footer from './components/footer'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,24 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} px-2 md:px-4`}>
         {children}
-        <footer>
-          <p className="text-left text-sm ml-2 text-zinc-600">
-            Design by{" "}
-            <Link
-              className="leading-3 line-through"
-              href={"https://github.com/JeppeHauman"}
-            >
-              J
-            </Link>{" "}
-            &{" "}
-            <Link
-              className="leading-3 line-through"
-              href={"https://github.com/n13a"}
-            >
-              N
-            </Link>
-          </p>
-        </footer> 
+        <Footer/>
       </body>
     </html>
   );

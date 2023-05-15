@@ -24,7 +24,7 @@ export default function MoviesNav({ movies }: Props) {
     };
   }, []);
   return (
-    <div className="w-full px-2 lg:h-[calc(100vh-8rem)] sticky top-12 xl:top-24">
+    <div className="w-full px-2 lg:h-[calc(100vh-8rem)] sticky top-12 md:top-24">
       <nav className=" flex flex-col h-full gap-5 justify-between">
         <ul className="flex flex-col text-center gap-1 lg:gap-5 items-center relative">
           {movies.map((movie: any, i: number) => (
