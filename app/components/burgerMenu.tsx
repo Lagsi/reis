@@ -16,7 +16,7 @@ export default function BurgerMenu() {
   return (
     <>
       {!isOpen && (
-        <div onClick={() => setIsOpen(true)} className="absolute top-0 right-0">
+        <div onClick={() => setIsOpen(true)} className="absolute top-0 right-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
