@@ -16,8 +16,8 @@ export const movies = [
       "The story of rivalry between two forms of winter transport: the horse-drawn sleigh which can take the short cut over the frozen lake and the red minibus which needs to be more devious to beat its rival. While the race goes on other tales of intransigence are told in this land of bards and minstrels.",
     imgUrl:
       "https://m.media-amazon.com/images/M/MV5BZjY2Zjc1MzUtOWU2Yi00MWVkLTk2NDEtMGMzZDhhODdkNjU2XkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_.jpg",
-    year: 2003,
-    awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
+    year: 2004,
+    awards: [],
   },
   {
     title: "Food for a Funeral",
@@ -30,8 +30,8 @@ export const movies = [
       "A young boy in a remote region who dreams of becoming a master of traditional music sets off on a trip with his teacher. He promises to bring back an apple as a souvenir for a girl. This eloquent contemporary allegory is set against a backdrop of tradition and culture.",
     imgUrl:
       "https://m.media-amazon.com/images/M/MV5BMDU2MDEyNmItYWVhMi00OGZiLWEyY2QtODcyNTJjMWJjMTQ5XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg",
-    year: 2001,
-    awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
+    year: 2019,
+    awards: [],
   },
   {
     title: "Goodbye Tomorrow",
@@ -46,7 +46,7 @@ export const movies = [
       "This movie is about Deniz Gezmis and his two comrades. They were three revolutionary activist has been executed by military fascist junta in 1972.",
     imgUrl:
       "https://m.media-amazon.com/images/M/MV5BMThmYjNiMmYtZWU3Ny00NDRmLTg0YjYtZGE3MTFmZmM1YzM2XkEyXkFqcGdeQXVyMTYzMDkwNjg@._V1_FMjpg_UX1000_.jpg",
-    year: 2001,
-    awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
+    year: 1998,
+    awards: [],
   },
 ];

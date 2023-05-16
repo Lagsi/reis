@@ -7,11 +7,11 @@ export default function MoviesPage() {
       <div className="w-1/4 hidden md:block border-r">
         <MoviesNav movies={movies} />
       </div>
-      <div className="lg:pl-4 lg:pt-16 w-full">
+      <div className="lg:pl-4 flex flex-col gap-4 lg:pt-16 w-full">
         {movies.map((movie, i) => (
           <section
             key={i}
-            className="lg:h-screen flex-col flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:mt-6"
+            className="lg:h-screen max-w-7xl flex-col flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:mt-6"
           >
             <div className="flex flex-col gap-3">
               <h1 id={movie.title} className="text-4xl">
@@ -35,7 +35,7 @@ export default function MoviesPage() {
 
             <div className="h-4/5">
               <img
-                className="w-full max-w-lg object-contain"
+                className="w-full max-h-full max-w-lg object-contain"
                 src={movie.imgUrl}
                 alt=""
               />
