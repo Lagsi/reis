@@ -7,7 +7,7 @@ export default function MoviesPage() {
       <div className="w-1/4 hidden md:block border-r">
         <MoviesNav movies={movies} />
       </div>
-      <div className="lg:ml-4 lg:pt-16">
+      <div className="lg:pl-4 lg:pt-16 w-full">
         {movies.map((movie, i) => (
           <section
             key={i}
@@ -18,7 +18,7 @@ export default function MoviesPage() {
                 {movie.title}
               </h1>
               <span className="block">{movie.year}</span>
-              <ul className="flex space-x-2 divide-x">
+              <ul className="flex flex-wrap md:space-x-2 md:divide-x">
                 {movie.cast.map((name, i) => (
                   <li key={i} className="pl-2 first:pl-0">
                     {name}
@@ -34,7 +34,11 @@ export default function MoviesPage() {
             </div>
 
             <div className="h-4/5">
-              <img className="max-w-full object-contain" src={movie.imgUrl} alt="" />
+              <img
+                className="w-full max-w-lg object-contain"
+                src={movie.imgUrl}
+                alt=""
+              />
             </div>
           </section>
         ))}

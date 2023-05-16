@@ -1,7 +1,8 @@
 import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from './components/footer'
+import Footer from "./components/footer";
+import BurgerMenu from "./components/burgerMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-2 md:px-4`}>
+      <body className={`${inter.className} md:px-4`}>
+        <BurgerMenu />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

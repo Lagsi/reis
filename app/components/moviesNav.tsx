@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface Props {
-  movies: any;
+  movies?: any;
 }
 
 export default function MoviesNav({ movies }: Props) {
@@ -27,22 +27,23 @@ export default function MoviesNav({ movies }: Props) {
     <div className="w-full px-2 lg:h-[calc(100vh-8rem)] sticky top-12 md:top-24">
       <nav className=" flex flex-col h-full gap-5 justify-between">
         <ul className="flex flex-col text-center gap-1 lg:gap-5 items-center relative">
-          {movies.map((movie: any, i: number) => (
-            <li
-              key={i}
-              className={`w-fit relative hover:opacity-50  transition-all before:opacity-50 after:opacity-50 ease-in-out duration-500  ${
-                scrollPosition * 100 >= (100 / movies.length) * i &&
-                scrollPosition * 100 <= (100 / movies.length) * (i + 1) &&
-                "opacity-50 before:w-2 before:h-[2px] before:bg-black before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 after:w-2 after:h-[2px] after:bg-black after:absolute after:-right-4 after:top-1/2 after:-translate-y-1/2"
-              }`}
-            >
-              <a className="w-fit" href={`#${movie.title}`}>
-                <h3 className="md:text-lg lg:text-xl xl:text-2xl">
-                  {movie.title}
-                </h3>
-              </a>
-            </li>
-          ))}
+          {movies &&
+            movies.map((movie: any, i: number) => (
+              <li
+                key={i}
+                className={`w-fit relative hover:opacity-50  transition-all before:opacity-50 after:opacity-50 ease-in-out duration-500  ${
+                  scrollPosition * 100 >= (100 / movies.length) * i &&
+                  scrollPosition * 100 <= (100 / movies.length) * (i + 1) &&
+                  "opacity-50 before:w-2 before:h-[2px] before:bg-black before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 after:w-2 after:h-[2px] after:bg-black after:absolute after:-right-4 after:top-1/2 after:-translate-y-1/2"
+                }`}
+              >
+                <a className="w-fit" href={`#${movie.title}`}>
+                  <h3 className="md:text-lg lg:text-xl xl:text-2xl">
+                    {movie.title}
+                  </h3>
+                </a>
+              </li>
+            ))}
           {/* <div className="absolute w-2 h-full right-0 2xl:right-20">
             <div
               className="bg-inherit w-full"
@@ -86,7 +87,7 @@ export default function MoviesNav({ movies }: Props) {
             </Link>
           </li>
           <li>
-            <Link className="hover:opacity-50" href={"/bio"}>
+            <Link className="hover:opacity-50" href={"/biography"}>
               Biography
             </Link>
           </li>
