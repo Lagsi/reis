@@ -11,24 +11,8 @@ export default function BioPage() {
           <img src="/reis.png" alt="Reis" className="w-full mb-8" />
           <h2 className="text-3xl font-bold text-center mb-8">Biography</h2>
           <p>
-            After primary and secondary education, he settled in Istanbul. He
-            studied music at Istanbul Municipal Conservatory and International
-            Economics at Istanbul University Faculty of Economics. He worked as
-            a reporter in Dünya newspaper and later in "Günaydin" newspaper for
-            more than 10 years. He took part in the Video Newspaper project,
-            which was Turkey's first private television initiative, within the
-            "Günaydin" newspaper in 1984. He later became the director of this
-            publication. He made a similar broadcast in Germany under the name
-            "VIDEO SELAM FROM TURKEY". He made many commercials and 12
-            documentary films. He continued his work on photography
-            uninterruptedly. He opened photography exhibitions in 12 different
-            countries. In 1992, he was among the founders of ATV television. He
-            prepared and directed many programs. In 1995, he ended his studies
-            in journalism, television and advertising and turned to cinema
-            completely. He shot his first feature film in 1996. Çelik was
-            attacked with an gun on April 21, 2005, in front of the Vakko store
-            on Istiklal Street in Istanbul. He suffered serious injuries to his
-            cheek and abdomen as a result of the incident.
+            Reis Çelik was born in Ardahan, in east Anatolia, in 1961. He moved to Istanbul after junior high school and studied music and theatre at the State Conservatoire. In 1982 he began a career in journalism, working as an economics/political correspondent for various national newspapers. In the following years, both his interviews and photographs appeared in several international newspapers and magazines. Around the same time, he began making documentary films, commercial and political campaign films, as well as maintaining an active interest in still photography. To date Çelik's photographic work has been featured in exhibitions in over 12 countries. In 1996 he directed his debut feature, ‘Işıklar Sönmesin’ (“Let There Be Light”), a humanitarian take on the Kurdish conflict in southeast Turkey, which won several awards on the international festival circuit. He followed this with another feature ‘Hoşçakal Yarın’ (‘Goodbye Tomorrow’) in 1998, which focuses on a key figure of the Turkish students’ movement who was executed in the early 1970s. He made his third film ‘İnat Hikayeleri’ (‘Tales of Intransigence’), all improvised feature, in 2004. Fallowing‘Mülteci’ (“Refugee”) in 2008, ‘Lal Gece’ (“Night Of Silence”) 2012 is Reis Celik’s 5th feature film. ‘Food For A Funeral’ (2019)
+
           </p>
         </div>
       </div>

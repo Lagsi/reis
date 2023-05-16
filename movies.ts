@@ -15,7 +15,7 @@ export const movies = [
     synopsis:
       "The story of rivalry between two forms of winter transport: the horse-drawn sleigh which can take the short cut over the frozen lake and the red minibus which needs to be more devious to beat its rival. While the race goes on other tales of intransigence are told in this land of bards and minstrels.",
     imgUrl:
-      "https://media-cache.cinematerial.com/p/500x/itrb8giy/lal-gece-british-movie-poster.jpg",
+      "https://m.media-amazon.com/images/M/MV5BZjY2Zjc1MzUtOWU2Yi00MWVkLTk2NDEtMGMzZDhhODdkNjU2XkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_.jpg",
     year: 2003,
     awards: ["Oscar: Best Movie", "bafta: Best British Award", "Cannes: Ayo!"],
   },
@@ -24,8 +24,6 @@ export const movies = [
     cast: [
       "Tarkhan Omarov",
       "Ziyaddin Aliyev",
-      "Silan Düzdaban",
-      "Mariam Buturishvili",
       "Dilan Aksüt",
     ],
     synopsis:
