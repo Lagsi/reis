@@ -11,7 +11,7 @@ export default function MoviesPage() {
         {movies.map((movie, i) => (
           <section
             key={i}
-            className="lg:h-screen max-w-7xl flex-col flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:mt-6"
+            className="lg:h-screen max-w-7xl flex-col lg:py-2 flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:mt-6"
           >
             <div className="flex flex-col gap-3">
               <h1 id={movie.title} className="text-4xl">
