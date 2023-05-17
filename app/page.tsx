@@ -38,7 +38,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/bio"}>
+                <Link className="hover:opacity-50" href={"/biography"}>
                   Biography
                 </Link>
               </li>
