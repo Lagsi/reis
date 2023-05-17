@@ -7,7 +7,7 @@ export default function MoviesPage() {
       <div className="w-1/4 hidden md:block border-r">
         <MoviesNav movies={movies} />
       </div>
-      <div className="lg:pl-4 flex flex-col gap-4 lg:pt-16 w-full">
+      <div className="flex flex-col gap-4 lg:pt-16 w-full">
         {movies.map((movie, i) => (
           <section
             key={i}

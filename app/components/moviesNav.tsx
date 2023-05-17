@@ -65,7 +65,7 @@ export default function MoviesNav({ movies }: Props) {
           </div> */}
         </ul>
         <Link href={"/"}>
-          <h4 className=" md:text-5xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
+          <h4 className=" md:text-5xl font-Playfair uppercase font-bold text-center lg:text-7xl lg:p-0">
             Reis
             <br /> Çelik
           </h4>
@@ -77,7 +77,7 @@ export default function MoviesNav({ movies }: Props) {
             </Link>
           </li>
           <li>
-            <Link className="hover:opacity-50" href={"/photos"}>
+            <Link className="hover:opacity-50" href={"/photography"}>
               Photography
             </Link>
           </li>

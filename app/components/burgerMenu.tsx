@@ -16,12 +16,12 @@ export default function BurgerMenu() {
   return (
     <>
       {!isOpen && (
-        <div onClick={() => setIsOpen(true)} className="absolute top-0 right-3">
+        <div onClick={() => setIsOpen(true)} className="absolute top-2 right-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
-            height="48"
-            width="48"
+            height="35"
+            width="35"
           >
             <g>
               <line
@@ -62,41 +62,72 @@ export default function BurgerMenu() {
         <div className="w-screen h-screen relative z-50">
           <div
             onClick={() => setIsOpen(false)}
-            className="absolute top-0 right-0"
+            className="absolute top-2 right-5"
           >
-            CLOSE
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 14 14"
+              height="35"
+              width="35"
+            >
+              <g>
+                <line
+                  x1="13.5"
+                  y1="0.5"
+                  x2="0.5"
+                  y2="13.5"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></line>
+                <line
+                  x1="0.5"
+                  y1="0.5"
+                  x2="13.5"
+                  y2="13.5"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></line>
+              </g>
+            </svg>
           </div>
 
-          <nav className="bg-white w-full h-1/2 flex flex-col items-center justify-center">
+          <nav className="bg-white w-full flex flex-col items-center justify-center">
             <ul
               onClick={closeMenu}
-              className="grid grid-cols-1 justify-items-center gap-3 x lg:max-w-xl lg:mx-auto"
+              className="grid grid-cols-1 justify-items-center gap-7 mt-16 lg:max-w-xl lg:mx-auto"
             >
-              <li>
+              <li className="">
                 <Link href={"/"}>
-                  <h4 className="text-5xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
+                  <h4 className="text-7xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
                     Reis
                     <br /> Çelik
                   </h4>
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/movies"}>
+                <Link className="hover:opacity-50 text-xl" href={"/movies"}>
                   Movies
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/photos"}>
+                <Link
+                  className="hover:opacity-50 text-xl"
+                  href={"/photography"}
+                >
                   Photography
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/awards"}>
+                <Link className="hover:opacity-50 text-xl" href={"/awards"}>
                   Awards
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/biography"}>
+                <Link className="hover:opacity-50 text-xl" href={"/biography"}>
                   Biography
                 </Link>
               </li>

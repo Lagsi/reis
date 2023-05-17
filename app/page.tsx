@@ -28,7 +28,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50" href={"/photos"}>
+                <Link className="hover:opacity-50" href={"/photography"}>
                   Photography
                 </Link>
               </li>
