@@ -1,12 +1,7 @@
-"use client";
-
 import { awards } from "@/awards";
 import MoviesNav from "../components/moviesNav";
-import { useState } from "react";
 
 export default function AwardsPage() {
-  const [hover, setHover] = useState(false);
-
   return (
     <div className="h-full min-h-[95vh] md:flex gap-4 p-4 lg:p-0 leading-7">
       <div className="w-1/4 hidden md:block border-r">
