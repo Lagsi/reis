@@ -31,8 +31,8 @@ export default function BurgerMenu() {
                 y2="2"
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></line>
               <line
                 x1="13.5"
@@ -41,8 +41,8 @@ export default function BurgerMenu() {
                 y2="7"
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></line>
               <line
                 x1="13.5"
@@ -51,8 +51,8 @@ export default function BurgerMenu() {
                 y2="12"
                 fill="none"
                 stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></line>
             </g>
           </svg>
@@ -78,8 +78,8 @@ export default function BurgerMenu() {
                   y2="13.5"
                   fill="none"
                   stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></line>
                 <line
                   x1="0.5"
@@ -88,8 +88,8 @@ export default function BurgerMenu() {
                   y2="13.5"
                   fill="none"
                   stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></line>
               </g>
             </svg>
