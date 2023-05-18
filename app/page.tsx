@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-1rem)] md:px-8 md:pb-4 lg:flex lg:justify-between mx-auto max-w-[1800px] lg:flex-col">
+    <main className="min-h-[calc(100vh-1rem)] pt-4 md:px-8 md:pb-4 lg:flex lg:justify-between mx-auto max-w-[1800px] lg:flex-col">
       <div className="grid lg:grid-cols-[1fr,0.7fr] lg:justify-between h-full">
         <div className="flex flex-col gap-4 items-center lg:w-4/5">
           <div className="w-full max-w-3xl">
