@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="md:snap-y md:snap-mandatory">
       <body className={`${inter.className} px-4`}>
         <div className="md:hidden">
           <BurgerMenu />
