@@ -24,10 +24,10 @@ export default function MoviesNav({ movies }: Props) {
     };
   }, []);
   return (
-    <div className="w-[45%] lg:w-1/4 hidden md:block border-r">
+    <div className="w-[350px] lg:w-[400px] px-6 hidden md:block border-r">
       <div className="w-full h-[calc(100vh-8rem)] sticky top-12 md:top-24">
         <nav className=" flex flex-col h-full  justify-between">
-          <ul className="flex flex-col text-center gap-1 lg:gap-5 items-center relative">
+          <ul className="flex flex-col text-center gap-3 lg:gap-5 items-center relative">
             {movies &&
               movies.map((movie: any, i: number) => (
                 <li
@@ -71,7 +71,7 @@ export default function MoviesNav({ movies }: Props) {
               <br /> Çelik
             </h4>
           </Link>
-          <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-1 lg:gap-3 lg:mb-20 lg:max-w-xl lg:mx-auto">
+          <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-3 lg:gap-3 lg:mb-20 lg:max-w-xl lg:mx-auto">
             <li>
               <Link className="hover:opacity-50" href={"/movies"}>
                 Movies

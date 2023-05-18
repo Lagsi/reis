@@ -59,7 +59,7 @@ export default function BurgerMenu() {
         </div>
       )}
       {isOpen && (
-        <div className="w-screen h-screen relative z-50">
+        <div className="w-full h-screen z-50">
           <div
             onClick={() => setIsOpen(false)}
             className="absolute top-2 right-5"

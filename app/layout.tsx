@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} md:px-4`}>
+      <body className={`${inter.className} px-4`}>
         <div className="md:hidden">
           <BurgerMenu />
         </div>

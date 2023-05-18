@@ -5,7 +5,7 @@ export default function BioPage() {
     <div className="h-full min-h-[95vh] md:flex gap-4 lg:p-0 leading-7">
       <MoviesNav />
 
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full mt-20 lg:mt-0">
         <div className="max-w-3xl lg:p-12">
           <img src="/reis.png" alt="Reis" className="w-full mb-8" />
           <h2 className="text-3xl font-bold text-center mb-8">Biography</h2>
