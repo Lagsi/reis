@@ -52,14 +52,14 @@ export default function Home() {
             <Link href={"/movies"}>Movies</Link>
           </li>
           <li>
-            <Link href={"/photos"}>Photography</Link>
+            <Link href={"/photography"}>Photography</Link>
           </li>
 
           <li>
             <Link href={"/awards"}>Awards</Link>
           </li>
           <li>
-            <Link href={"/bio"}>Biography</Link>
+            <Link href={"/biography"}>Biography</Link>
           </li>
         </ul>
       </nav>
