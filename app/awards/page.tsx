@@ -4,9 +4,7 @@ import MoviesNav from "../components/moviesNav";
 export default function AwardsPage() {
   return (
     <div className="h-full min-h-[95vh] md:flex gap-4 leading-7">
-      <div className="w-1/4 hidden md:block border-r">
-        <MoviesNav />
-      </div>
+      <MoviesNav />
       <div className="w-full">
         <h1 className="text-6xl xl:text-8xl p-3 xl:p-6">Awards</h1>
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-3 w-full max-w-7xl xl:p-6">
