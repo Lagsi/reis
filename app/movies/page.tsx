@@ -3,11 +3,13 @@ import MoviesNav from "../components/moviesNav";
 
 export default function MoviesPage() {
   return (
-    <div className="h-full md:flex gap-4  lg:p-0 leading-7">
+    <div className="h-full md:flex gap-4 leading-7">
       <MoviesNav movies={movies} />
 
-      <div className="flex flex-col justify-between items-center gap-4 w-full">
-        <h1 className="text-6xl max-w-7xl snap-start xl:text-8xl">Biography</h1>
+      <div className="flex flex-col gap-4 items-center lg:items-start w-full py-10 md:p-4 xl:p-9">
+        <h1 className="text-6xl w-full pt-4 snap-start xl:text-8xl xl:pt-9">
+          Movies
+        </h1>
         {movies.map((movie, i) => (
           <>
             <section
@@ -25,7 +27,7 @@ export default function MoviesPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="max-w-lg ">{movie.synopsis}</p>
+                <p className="lg:max-w-lg">{movie.synopsis}</p>
                 <ul>
                   {movie.awards.map((award, i) => (
                     <li key={i}>{award}</li>
