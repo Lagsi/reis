@@ -72,7 +72,7 @@ export default function MoviesNav({ movies }: Props) {
             </div> */}
 
           <Link href={"/"}>
-            <h4 className=" md:text-5xl font-Playfair uppercase font-bold text-center lg:text-7xl lg:p-0">
+            <h4 className="select-none md:text-5xl font-Playfair uppercase font-bold text-center lg:text-7xl lg:p-0">
               Reis
               <br /> Çelik
             </h4>
