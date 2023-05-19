@@ -40,7 +40,7 @@ export const movies = [
       "Orhan Aydin",
       "Firat Baskale",
       "Bedri Baykam",
-      "Meltem Berent",
+
     ],
     synopsis:
       "This movie is about Deniz Gezmis and his two comrades. They were three revolutionary activist has been executed by military fascist junta in 1972.",
