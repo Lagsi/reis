@@ -15,17 +15,24 @@ export default function MoviesPage() {
             <section
               id={movie.title}
               key={i}
-              className={`lg:h-screen ${i !== 0 && 'snap-start'} max-w-7xl flex-col lg:py-6 flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:pt-8 md:first:pt-3 lg:first:pt-6`}
+              className={`lg:h-screen ${
+                i !== 0 && "snap-start"
+              } max-w-7xl flex-col lg:py-6 flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:pt-8 md:first:pt-3 lg:first:pt-6`}
             >
               <div className="flex flex-col gap-3">
                 <h1 className="text-4xl">{movie.title}</h1>
                 <span className="block">{movie.year}</span>
-                <ul className="flex flex-wrap md:space-x-2 md:divide-x">
-                  {movie.cast.map((name, i) => (
-                    <li key={i} className="pl-2 first:pl-0">
-                      {name}
-                    </li>
-                  ))}
+                <ul className="flex flex-wrap max-w-md -ml-2">
+                  {movie.cast.map((name, i) => {
+                    return (
+                      <li
+                        key={i}
+                        className="pl-2 border-r pr-2 last:border-r-0"
+                      >
+                        {name}
+                      </li>
+                    );
+                  })}
                 </ul>
                 <p className="lg:max-w-lg">{movie.synopsis}</p>
                 <ul>

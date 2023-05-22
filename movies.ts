@@ -21,11 +21,7 @@ export const movies = [
   },
   {
     title: "Food for a Funeral",
-    cast: [
-      "Tarkhan Omarov",
-      "Ziyaddin Aliyev",
-      "Dilan Aksüt",
-    ],
+    cast: ["Tarkhan Omarov", "Ziyaddin Aliyev", "Dilan Aksüt"],
     synopsis:
       "A young boy in a remote region who dreams of becoming a master of traditional music sets off on a trip with his teacher. He promises to bring back an apple as a souvenir for a girl. This eloquent contemporary allegory is set against a backdrop of tradition and culture.",
     imgUrl:
@@ -35,13 +31,7 @@ export const movies = [
   },
   {
     title: "Goodbye Tomorrow",
-    cast: [
-      "Ekrem Ataer",
-      "Orhan Aydin",
-      "Firat Baskale",
-      "Bedri Baykam",
-
-    ],
+    cast: ["Ekrem Ataer", "Orhan Aydin", "Firat Baskale", "Bedri Baykam", ""],
     synopsis:
       "This movie is about Deniz Gezmis and his two comrades. They were three revolutionary activist has been executed by military fascist junta in 1972.",
     imgUrl:

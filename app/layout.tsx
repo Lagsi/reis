@@ -2,10 +2,11 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "./components/footer";
 import BurgerMenu from "./components/burgerMenu";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Reis Çelik",
   description: "Reis Çelik's website showing his previous work and awards",
 };
