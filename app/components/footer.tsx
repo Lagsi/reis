@@ -3,7 +3,7 @@ import Link from "next/link";
 const footer = () => {
   return (
     <footer>
-      <p className="text-left leading-3 text-sm  text-zinc-600">
+      <p className="text-left text-sm leading-3  text-zinc-600">
         Design by{" "}
         <Link
           className="leading-3 line-through"

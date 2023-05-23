@@ -24,22 +24,22 @@ export default function MoviesNav({ movies }: Props) {
     };
   }, []);
   return (
-    <div className="w-[350px] lg:w-[400px] px-6 hidden md:block border-r">
-      <div className="w-full h-[calc(100vh-8rem)] sticky top-12 md:top-24">
+    <div className="hidden w-[350px] border-r px-6 md:block lg:w-[400px]">
+      <div className="sticky top-12 h-[calc(100vh-8rem)] w-full md:top-24">
         <nav
-          className={`flex flex-col h-full ${
+          className={`flex h-full flex-col ${
             movies ? "justify-between" : "justify-around"
           }`}
         >
           {movies && (
-            <ul className="flex flex-col text-center gap-3 lg:gap-5 items-center relative">
+            <ul className="relative flex flex-col items-center gap-3 text-center lg:gap-5">
               {movies.map((movie: any, i: number) => (
                 <li
                   key={i}
-                  className={`w-fit relative hover:opacity-50  transition-all before:opacity-50 after:opacity-50 ease-in-out duration-500  ${
+                  className={`relative w-fit transition-all  duration-500 ease-in-out before:opacity-50 after:opacity-50 hover:opacity-50  ${
                     scrollPosition * 100 >= (100 / movies.length) * i &&
                     scrollPosition * 100 <= (100 / movies.length) * (i + 1) &&
-                    "opacity-50 before:w-2 before:h-[2px] before:bg-black before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 after:w-2 after:h-[2px] after:bg-black after:absolute after:-right-4 after:top-1/2 after:-translate-y-1/2"
+                    "opacity-50 before:absolute before:-left-4 before:top-1/2 before:h-[2px] before:w-2 before:-translate-y-1/2 before:bg-black after:absolute after:-right-4 after:top-1/2 after:h-[2px] after:w-2 after:-translate-y-1/2 after:bg-black"
                   }`}
                 >
                   <a className="w-fit" href={`#${movie.title}`}>
@@ -72,12 +72,12 @@ export default function MoviesNav({ movies }: Props) {
             </div> */}
 
           <Link href={"/"}>
-            <h4 className="select-none md:text-5xl font-Playfair uppercase font-bold text-center lg:text-7xl lg:p-0">
+            <h4 className="select-none text-center font-Playfair font-bold uppercase md:text-5xl lg:p-0 lg:text-7xl">
               Reis
               <br /> Çelik
             </h4>
           </Link>
-          <ul className="grid grid-cols-1 text-center lg:grid-cols-2 lg:text-left gap-3 lg:gap-3 lg:mb-20 lg:max-w-xl lg:mx-auto">
+          <ul className="grid grid-cols-1 gap-3 text-center lg:mx-auto lg:mb-20 lg:max-w-xl lg:grid-cols-2 lg:gap-3 lg:text-left">
             <li>
               <Link className="hover:opacity-50" href={"/movies"}>
                 Movies

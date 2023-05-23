@@ -3,11 +3,11 @@ import MoviesNav from "../components/moviesNav";
 
 export default function MoviesPage() {
   return (
-    <div className="h-full md:flex gap-4 leading-7">
+    <div className="h-full gap-4 leading-7 md:flex">
       <MoviesNav movies={movies} />
 
-      <div className="flex flex-col gap-4 items-center lg:items-start w-full py-10 md:p-4 xl:p-9">
-        <h1 className="text-6xl w-full pt-4 snap-start xl:text-8xl xl:pt-9">
+      <div className="flex w-full flex-col items-center gap-4 py-10 md:p-4 lg:items-start xl:p-9">
+        <h1 className="w-full snap-start pt-4 text-6xl xl:pt-9 xl:text-8xl">
           Movies
         </h1>
         {movies.map((movie, i) => (
@@ -17,17 +17,17 @@ export default function MoviesPage() {
               key={i}
               className={`lg:h-screen ${
                 i !== 0 && "snap-start"
-              } max-w-7xl flex-col lg:py-6 flex max-h-[1440px] justify-between items-center lg:items-start lg:flex-row gap-10 first:pt-8 md:first:pt-3 lg:first:pt-6`}
+              } flex max-h-[1440px] max-w-7xl flex-col items-center justify-between gap-10 first:pt-8 md:first:pt-3 lg:flex-row lg:items-start lg:py-6 lg:first:pt-6`}
             >
               <div className="flex flex-col gap-3">
                 <h1 className="text-4xl">{movie.title}</h1>
                 <span className="block">{movie.year}</span>
-                <ul className="flex flex-wrap max-w-md -ml-2">
+                <ul className="-ml-2 flex max-w-md flex-wrap">
                   {movie.cast.map((name, i) => {
                     return (
                       <li
                         key={i}
-                        className="pl-2 border-r pr-2 last:border-r-0"
+                        className="border-r pl-2 pr-2 last:border-r-0"
                       >
                         {name}
                       </li>
@@ -44,7 +44,7 @@ export default function MoviesPage() {
 
               <div className="h-4/5">
                 <img
-                  className="w-full max-h-full max-w-lg object-contain"
+                  className="max-h-full w-full max-w-lg object-contain"
                   src={movie.imgUrl}
                   alt=""
                 />

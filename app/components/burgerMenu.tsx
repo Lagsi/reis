@@ -16,7 +16,7 @@ export default function BurgerMenu() {
   return (
     <>
       {!isOpen && (
-        <div onClick={() => setIsOpen(true)} className="absolute top-2 right-5">
+        <div onClick={() => setIsOpen(true)} className="absolute right-5 top-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
@@ -59,10 +59,10 @@ export default function BurgerMenu() {
         </div>
       )}
       {isOpen && (
-        <div className="w-full h-screen z-50">
+        <div className="z-50 h-screen w-full">
           <div
             onClick={() => setIsOpen(false)}
-            className="absolute top-2 right-5"
+            className="absolute right-5 top-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,39 +95,39 @@ export default function BurgerMenu() {
             </svg>
           </div>
 
-          <nav className="bg-white w-full flex flex-col items-center justify-center">
+          <nav className="flex w-full flex-col items-center justify-center bg-white">
             <ul
               onClick={closeMenu}
-              className="grid grid-cols-1 justify-items-center gap-7 mt-16 lg:max-w-xl lg:mx-auto"
+              className="mt-16 grid grid-cols-1 justify-items-center gap-7 lg:mx-auto lg:max-w-xl"
             >
               <li className="">
                 <Link href={"/"}>
-                  <h4 className="text-7xl font-Playfair uppercase p-4 font-bold text-center lg:text-7xl lg:p-0">
+                  <h4 className="p-4 text-center font-Playfair text-7xl font-bold uppercase lg:p-0 lg:text-7xl">
                     Reis
                     <br /> Çelik
                   </h4>
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50 text-xl" href={"/movies"}>
+                <Link className="text-xl hover:opacity-50" href={"/movies"}>
                   Movies
                 </Link>
               </li>
               <li>
                 <Link
-                  className="hover:opacity-50 text-xl"
+                  className="text-xl hover:opacity-50"
                   href={"/photography"}
                 >
                   Photography
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50 text-xl" href={"/awards"}>
+                <Link className="text-xl hover:opacity-50" href={"/awards"}>
                   Awards
                 </Link>
               </li>
               <li>
-                <Link className="hover:opacity-50 text-xl" href={"/biography"}>
+                <Link className="text-xl hover:opacity-50" href={"/biography"}>
                   Biography
                 </Link>
               </li>
